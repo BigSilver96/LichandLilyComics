@@ -8,11 +8,35 @@ body {
 header {
     background-color: #ABF4FF;
     padding: 10px;
-    text-align: center;
+    display: flex; /* Use flexbox to align items */
+    justify-content: space-between; /* Space between logo and circular image */
+    align-items: center; /* Center items vertically */
 }
 
 header img {
     width: 700px; /* Adjust the logo size as needed */
+}
+
+#logo {
+    width: 500px; /* Adjust the width as needed */
+    height: auto; /* Maintain the aspect ratio */
+}
+
+.circular-image-container {
+    width: 100px; /* Set width for circular container */
+    height: 100px; /* Set height for circular container */
+    overflow: hidden; /* Hide overflow to create circular shape */
+    border-radius: 50%; /* Make it circular */
+    border: 2px solid #DB8851; /* Optional: add border */
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Center the image */
+}
+
+.circular-image {
+    width: 100%; /* Make the image responsive to the container */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Cover the container */
 }
 
 nav ul {
@@ -40,74 +64,4 @@ nav ul li a {
     text-align: center;
 }
 
-#bios h2 {
-    margin-bottom: 20px;
-}
-
-/* Container for images */
-.image-container {
-    display: block;             /* Change to block to stack images vertically */
-    align-items: center;       /* Center align items if needed */
-    margin-bottom: 20px;       /* Space below the image container */
-}
-
-/* Bio images */
-.bio-image {
-    width: 500px;              /* Adjust the size of the images as needed */
-    height: auto;              /* Maintain aspect ratio */
-    border-radius: 8px;        /* Rounded corners */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Shadow effect */
-    margin-bottom: 20px;       /* Space between stacked images */
-}
-
-/* Container for bio boxes */
-.bio-container {
-    display: flex;
-    justify-content: center;
-    gap: 20px; /* Adjust the spacing between bio boxes */
-}
-
-.bio {
-    width: 500px; /* Adjust the width as needed */
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 15px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.bio h3 {
-    margin-top: 0;
-}
-
-#contact-info {
-    padding: 20px;
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-}
-
-form label {
-    margin: 10px 0 5px;
-}
-
-form input,
-form textarea {
-    padding: 10px;
-    margin-bottom: 10px;
-}
-
-form button {
-    background-color: #DB8851;
-    color: white;
-    padding: 10px;
-    border: none;
-    cursor: pointer;
-}
-
-#logo {
-    width: 500px; /* Adjust the width as needed */
-    height: auto; /* Maintain the aspect ratio */
-}
+#bios h2 

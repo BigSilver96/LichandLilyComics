@@ -9,8 +9,9 @@ header {
     background-color: #ABF4FF;
     padding: 10px;
     display: flex; /* Use flexbox to align items */
-    justify-content: space-between; /* Space between logo and circular image */
+    justify-content: center; /* Center the logo in the header */
     align-items: center; /* Center items vertically */
+    position: relative; /* Allow absolute positioning of the circular image */
 }
 
 header img {
@@ -23,14 +24,18 @@ header img {
 }
 
 .circular-image-container {
-    width: 50px; /* Set width for circular container */
-    height: 50px; /* Set height for circular container */
+    width: 100px; /* Set width for circular container */
+    height: 100px; /* Set height for circular container */
     overflow: hidden; /* Hide overflow to create circular shape */
     border-radius: 50%; /* Make it circular */
     border: 2px solid #DB8851; /* Optional: add border */
     display: flex;
     justify-content: center;
     align-items: center; /* Center the image */
+    position: absolute; /* Position absolutely within the header */
+    right: 20px; /* Adjust as needed for spacing */
+    top: 50%; /* Center vertically */
+    transform: translateY(-50%); /* Adjust for exact vertical centering */
 }
 
 .circular-image {
@@ -64,4 +69,8 @@ nav ul li a {
     text-align: center;
 }
 
-#bios h2 
+#bios h2 {
+    margin-bottom: 20px;
+}
+
+/* Additional styles... */

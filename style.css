@@ -11,16 +11,13 @@ header {
     display: flex; /* Use flexbox to align items */
     align-items: center; /* Center items vertically */
     position: relative; /* Allow absolute positioning of the circular image */
-    justify-content: center; /* Center the logo */
+    justify-content: space-between; /* Space out children */
+    flex-direction: column; /* Stack children vertically */
 }
 
 header img#logo {
     width: 700px; /* Adjust the logo size as needed */
-}
-
-#logo {
-    width: 500px; /* Adjust the width as needed */
-    height: auto; /* Maintain the aspect ratio */
+    margin-bottom: 10px; /* Space between logo and nav */
 }
 
 .circular-image-container {

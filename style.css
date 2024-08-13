@@ -21,8 +21,6 @@ header img#logo {
     justify-content: center;
     align-items: center; /* Center the image */
     position: absolute; /* Position absolutely within the header */
-    top: 50%; /* Center vertically */
-    transform: translateY(-50%); /* Adjust for exact vertical centering */
 }
 
 .circular-image-container {

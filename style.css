@@ -16,6 +16,7 @@ header {
 
 header img#logo {
     width: 700px; /* Adjust the logo size as needed */
+      justify-content: center; /* Center the logo */
 }
 
 #logo {

@@ -11,16 +11,6 @@ header {
     display: flex; /* Use flexbox to align items */
     align-items: center; /* Center items vertically */
     position: relative; /* Allow absolute positioning of the circular image */
-    justify-content: space-between; /* Space out children */
-    flex-direction: column; /* Stack children vertically */
-}
-
-header img#logo {
-    width: 700px; /* Adjust the logo size as needed */
-    margin-bottom: 10px; /* Space between logo and nav */
-    justify-content: center;
-    align-items: center; /* Center the image */
-    position: absolute; /* Position absolutely within the header */
 }
 
 .circular-image-container {
@@ -44,10 +34,20 @@ header img#logo {
     object-fit: cover; /* Cover the container */
 }
 
+#logo {
+    width: 500px; /* Adjust the logo size as needed */
+    height: auto; /* Maintain the aspect ratio */
+    margin: 0 auto; /* Center the logo horizontally */
+}
+
+nav {
+    text-align: center; /* Center navigation links */
+    margin-top: 10px; /* Space between logo and nav */
+}
+
 nav ul {
     list-style: none;
     padding: 0;
-    text-align: center; /* Center navigation links */
 }
 
 nav ul li {

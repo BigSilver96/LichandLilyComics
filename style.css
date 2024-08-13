@@ -9,7 +9,7 @@ header {
     background-color: #ABF4FF;
     padding: 10px;
     display: flex; /* Use flexbox to align items */
-    justify-content: center; /* Center the logo in the header */
+    justify-content: space-between; /* Space between logo and circular image */
     align-items: center; /* Center items vertically */
     position: relative; /* Allow absolute positioning of the circular image */
 }
@@ -33,7 +33,7 @@ header img {
     justify-content: center;
     align-items: center; /* Center the image */
     position: absolute; /* Position absolutely within the header */
-    right: 20px; /* Adjust as needed for spacing */
+    left: 20px; /* Position at the far left */
     top: 50%; /* Center vertically */
     transform: translateY(-50%); /* Adjust for exact vertical centering */
 }
@@ -60,17 +60,4 @@ nav ul li a {
 }
 
 #social-media img {
-    width: 30px;
-    margin: 0 10px;
-}
-
-#bios {
-    padding: 20px;
-    text-align: center;
-}
-
-#bios h2 {
-    margin-bottom: 20px;
-}
-
-/* Additional styles... */
+    width

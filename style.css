@@ -9,12 +9,12 @@ header {
     background-color: #ABF4FF;
     padding: 10px;
     display: flex; /* Use flexbox to align items */
-    justify-content: space-between; /* Space between logo and circular image */
     align-items: center; /* Center items vertically */
     position: relative; /* Allow absolute positioning of the circular image */
+    justify-content: center; /* Center the logo */
 }
 
-header img {
+header img#logo {
     width: 700px; /* Adjust the logo size as needed */
 }
 
@@ -47,6 +47,7 @@ header img {
 nav ul {
     list-style: none;
     padding: 0;
+    text-align: center; /* Center navigation links */
 }
 
 nav ul li {
@@ -60,4 +61,17 @@ nav ul li a {
 }
 
 #social-media img {
-    width
+    width: 30px;
+    margin: 0 10px;
+}
+
+#bios {
+    padding: 20px;
+    text-align: center;
+}
+
+#bios h2 {
+    margin-bottom: 20px;
+}
+
+/* Additional styles... */

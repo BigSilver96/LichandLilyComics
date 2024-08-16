@@ -58,7 +58,7 @@ main {
 }
 
 .character-image {
-    width: 150px; /* Adjust the size of character images as needed */
+    width: 400px; /* Adjust the size of character images as needed */
     height: auto; /* Maintain aspect ratio */
     border-radius: 8px; /* Optional: add rounded corners */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: add shadow effect */

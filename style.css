@@ -42,8 +42,6 @@ nav ul li a {
     margin: 0 10px;
 }
 
-/* Other styles remain unchanged */
-
 /* Bios section */
 #bios {
     padding: 20px;
@@ -56,18 +54,18 @@ nav ul li a {
 
 /* Container for images */
 .image-container {
-    display: block;             /* Change to block to stack images vertically */
-    align-items: center;       /* Center align items if needed */
-    margin-bottom: 20px;       /* Space below the image container */
+    display: block; /* Change to block to stack images vertically */
+    align-items: center; /* Center align items if needed */
+    margin-bottom: 20px; /* Space below the image container */
 }
 
 /* Bio images */
 .bio-image {
-    width: 500px;              /* Adjust the size of the images as needed */
-    height: auto;              /* Maintain aspect ratio */
-    border-radius: 8px;        /* Rounded corners */
+    width: 500px; /* Adjust the size of the images as needed */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Rounded corners */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Shadow effect */
-    margin-bottom: 20px;       /* Space between stacked images */
+    margin-bottom: 20px; /* Space between stacked images */
 }
 
 /* Container for bio boxes */

@@ -3,6 +3,8 @@ body {
     margin: 0;
     padding: 0;
     color: #333;
+    position: relative; /* Ensure body is positioned relative for absolute children */
+    min-height: 100vh; /* Ensure body takes full viewport height */
 }
 
 header {
@@ -31,6 +33,9 @@ header img {
     display: flex;
     justify-content: center;
     align-items: center; /* Center the image */
+    position: fixed; /* Fix position relative to the viewport */
+    bottom: 10px; /* Distance from the bottom */
+    right: 10px; /* Distance from the right */
 }
 
 .circular-image {

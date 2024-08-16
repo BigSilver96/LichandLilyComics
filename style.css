@@ -9,32 +9,27 @@ body {
 
 header {
     background-color: #ABF4FF;
-    padding: 10px;
-    display: flex; /* Use flexbox to align items */
-    justify-content: space-between; /* Space between logo and other items */
-    align-items: center; /* Center items vertically */
-}
-
-header img {
-    width: 700px; /* Adjust the logo size as needed */
+    padding: 20px; /* Add more padding to accommodate both logo and navigation */
+    text-align: center; /* Center-align all content in the header */
+    border-bottom: 1px solid #ddd; /* Optional: add a border for visual separation */
 }
 
 #logo {
     width: 500px; /* Adjust the width as needed */
     height: auto; /* Maintain the aspect ratio */
+    display: block; /* Ensure logo is a block element for centering */
+    margin: 0 auto 10px; /* Center logo and add margin below */
 }
 
-/* Removed CSS for .circular-image-container and .circular-image */
-
-/* Navigation styles */
 nav ul {
     list-style: none;
     padding: 0;
+    margin: 0; /* Remove default margin */
 }
 
 nav ul li {
     display: inline;
-    margin: 0 10px;
+    margin: 0 10px; /* Adjust spacing between menu items */
 }
 
 nav ul li a {
@@ -42,11 +37,12 @@ nav ul li a {
     text-decoration: none;
 }
 
-/* Social media icons */
 #social-media img {
     width: 30px;
     margin: 0 10px;
 }
+
+/* Other styles remain unchanged */
 
 /* Bios section */
 #bios {

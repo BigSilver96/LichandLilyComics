@@ -11,7 +11,7 @@ header {
     background-color: #ABF4FF;
     padding: 10px;
     display: flex; /* Use flexbox to align items */
-    justify-content: space-between; /* Space between logo and circular image */
+    justify-content: space-between; /* Space between logo and other items */
     align-items: center; /* Center items vertically */
 }
 
@@ -24,26 +24,9 @@ header img {
     height: auto; /* Maintain the aspect ratio */
 }
 
-.circular-image-container {
-    width: 100px; /* Set width for circular container */
-    height: 100px; /* Set height for circular container */
-    overflow: hidden; /* Hide overflow to create circular shape */
-    border-radius: 50%; /* Make it circular */
-    border: 2px solid #DB8851; /* Optional: add border */
-    display: flex;
-    justify-content: center;
-    align-items: center; /* Center the image */
-    position: fixed; /* Fix position relative to the viewport */
-    bottom: 10px; /* Distance from the bottom */
-    right: 10px; /* Distance from the right */
-}
+/* Removed CSS for .circular-image-container and .circular-image */
 
-.circular-image {
-    width: 100%; /* Make the image responsive to the container */
-    height: auto; /* Maintain aspect ratio */
-    object-fit: cover; /* Cover the container */
-}
-
+/* Navigation styles */
 nav ul {
     list-style: none;
     padding: 0;
@@ -59,11 +42,13 @@ nav ul li a {
     text-decoration: none;
 }
 
+/* Social media icons */
 #social-media img {
     width: 30px;
     margin: 0 10px;
 }
 
+/* Bios section */
 #bios {
     padding: 20px;
     text-align: center;
@@ -113,6 +98,7 @@ nav ul li a {
     padding: 20px;
 }
 
+/* Form styles */
 form {
     display: flex;
     flex-direction: column;

@@ -42,6 +42,66 @@ main {
     padding: 20px;
 }
 
+/* Comics Page Styles */
+.comic-list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.comic {
+    margin-bottom: 30px;
+}
+
+.comic h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.image-gallery {
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.gallery {
+    display: flex;
+    gap: 10px;
+    transition: transform 0.3s ease;
+}
+
+.gallery img {
+    max-width: 300px;
+    height: auto;
+    object-fit: contain;
+}
+
+button.scroll-left, button.scroll-right {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 24px;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+button.scroll-left {
+    left: 0;
+}
+
+button.scroll-right {
+    right: 0;
+}
+
+button.scroll-left:hover, button.scroll-right:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Character & Image Section */
 .character-container {
     display: flex;
     flex-direction: column; /* Stack text and images vertically */
@@ -64,12 +124,13 @@ main {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: add shadow effect */
 }
 
+/* Social Media Section */
 #social-media img {
     width: 100px;
     margin: 0 10px;
 }
 
-/* Bios section */
+/* Bios Section */
 #bios {
     padding: 20px;
     text-align: center;
@@ -79,14 +140,12 @@ main {
     margin-bottom: 20px;
 }
 
-/* Container for images */
 .image-container {
     display: block; /* Change to block to stack images vertically */
     align-items: center; /* Center align items if needed */
     margin-bottom: 20px; /* Space below the image container */
 }
 
-/* Bio images */
 .bio-image {
     width: 500px; /* Adjust the size of the images as needed */
     height: auto; /* Maintain aspect ratio */
@@ -95,7 +154,6 @@ main {
     margin-bottom: 20px; /* Space between stacked images */
 }
 
-/* Container for bio boxes */
 .bio-container {
     display: flex;
     justify-content: center;
@@ -115,11 +173,11 @@ main {
     margin-top: 0;
 }
 
+/* Contact Form Section */
 #contact-info {
     padding: 20px;
 }
 
-/* Form styles */
 form {
     display: flex;
     flex-direction: column;

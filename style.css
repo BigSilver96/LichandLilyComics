@@ -200,3 +200,22 @@ form button {
     border: none;
     cursor: pointer;
 }
+
+/* Additional Styles for the combined functionality */
+.comic .gallery {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.comic .comic-image {
+    display: none; /* Hide all images by default */
+    width: 100%;
+    max-width: 500px;
+}
+
+.comic .comic-image.active {
+    display: block; /* Show only the active image */
+}
+

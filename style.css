@@ -1,17 +1,54 @@
-/* Comics Page Styles */
+/* Body and Layout */
+body {
+    font-family: 'Mukta', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    text-align: center; /* Center content of the body */
+}
+
+/* Header Styling */
+header {
+    background-color: #ABF4FF;
+    padding: 20px;
+}
+
+#logo {
+    width: 300px; /* Adjust size of the logo */
+    margin-bottom: 10px;
+}
+
+/* Navigation Styling */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #DB8851;
+    text-decoration: none;
+}
+
+/* Comics Section */
 .comic-list {
     display: flex;
     flex-direction: column;
-    gap: 30px;
-    align-items: center; /* Center the comics section */
+    gap: 40px;
+    align-items: center; /* Center the comic section */
 }
 
 .comic {
-    margin-bottom: 30px;
-    width: 100%; /* Take up full width of its container */
+    width: 80%; /* Width of the comic container */
+    position: relative; /* Positioning for buttons */
     display: flex;
-    justify-content: center; /* Center content horizontally */
-    position: relative; /* Make sure relative positioning is applied for buttons */
+    flex-direction: column;
+    align-items: center;
 }
 
 .comic h2 {
@@ -19,21 +56,59 @@
     margin-bottom: 10px;
 }
 
+/* Image Gallery Styling */
 .image-gallery {
     display: flex;
     align-items: center;
+    justify-content: center; /* Ensure the gallery is centered */
     position: relative;
     overflow: hidden;
-    width: 80%; /* Adjust width of the gallery (you can make this 100% or set any other value) */
-    max-width: 600px; /* Maximum width for the image gallery */
+    width: 100%;
+    max-width: 600px; /* Max width of the gallery */
 }
 
+/* Ensure images are centered and only one shows */
 .gallery {
     display: flex;
-    gap: 10px;
     transition: transform 0.3s ease;
     justify-content: center;
 }
 
 .gallery img {
-    width: 100%; /* Ensure i
+    width: 100%; /* Make the images take up the full width of the container */
+    max-width: 500px; /* Set a max width for each image */
+    height: auto;
+    object-fit: contain;
+    display: none; /* Initially hide all images */
+}
+
+/* Active image will be displayed */
+.gallery img.active {
+    display: block;
+}
+
+/* Scroll Buttons Styling */
+button.scroll-left, button.scroll-right {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 24px;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10; /* Ensure buttons are above the images */
+}
+
+button.scroll-left {
+    left: 10px; /* Position the left button */
+}
+
+button.scroll-right {
+    right: 10px; /* Position the right button */
+}
+
+button.scroll-left:hover, button.scroll-right:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}

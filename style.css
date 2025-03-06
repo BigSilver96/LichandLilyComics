@@ -115,6 +115,6 @@ button.scroll-left:hover, button.scroll-right:hover {
 
 /* Social Media Image Resizing */
 #social-media img {
-    width: 25%;  /* Resize the images to half their original size */
+    width: 25%;  
     height: auto;  /* Maintain the aspect ratio */
 }

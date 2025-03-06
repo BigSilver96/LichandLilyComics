@@ -112,3 +112,9 @@ button.scroll-right {
 button.scroll-left:hover, button.scroll-right:hover {
     background-color: rgba(0, 0, 0, 0.8);
 }
+
+/* Social Media Image Resizing */
+#social-media img {
+    width: 50%;  /* Resize the images to half their original size */
+    height: auto;  /* Maintain the aspect ratio */
+}
